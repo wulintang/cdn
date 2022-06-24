@@ -1,0 +1,77 @@
+#fixed {
+	background-color:#ffffff;
+	width:44px;
+	left:0;
+	top:0;
+	bottom:0;
+	z-index:999999;
+    font: 12px/1.5 -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+    font-weight: 300;
+}
+#fixed #dd {
+	list-style:none!important;
+	padding:0px!important;
+	margin:0px!important;
+	width:44px!important;
+	position:absolute!important;
+	left:0!important;
+	top:32%!important;
+	bottom:0!important;
+	vertical-align:middle!important;
+	margin-top:-240px!important;
+}
+#fixed #dt {
+    background-color:#000000;
+	position:absolute;
+	width:44px;
+	display:block;
+	bottom:50px;
+}
+#fixed #dt a {
+  color: #ffffff;
+}
+#fixed #dt a:hover {
+  color: #ffffff;
+}
+#fixed #dd {
+	border-bottom:1px solid #000000;
+}
+#fixed a,#fixed a:link,#fixed a:visited {
+    text-decoration: none;
+    display: block;
+    color: #000000;
+    text-align: center;
+    overflow: hidden;
+    padding:2px;
+}
+#fixed #dd a:hover {
+  color: #ffffff;
+}
+#fixed #dd a:hover {background-color:#000000;}
+#feedAv{ margin-top: -250px!important;transform: scale(0);}
+.xuanzhun{
+ -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation: rotate 3s linear infinite;
+    -moz-animation: rotate 3s linear infinite;
+    -o-animation: rotate 3s linear infinite;
+    animation: rotate 3s linear infinite;
+}
+@-webkit-keyframes rotate{from{-webkit-transform: rotate(0deg)}
+    to{-webkit-transform: rotate(360deg)}
+}
+@-moz-keyframes rotate{from{-moz-transform: rotate(0deg)}
+    to{-moz-transform: rotate(359deg)}
+}
+@-o-keyframes rotate{from{-o-transform: rotate(0deg)}
+    to{-o-transform: rotate(359deg)}
+}
+@keyframes rotate{from{transform: rotate(0deg)}
+    to{transform: rotate(359deg)}
+}
+.c {font-size: 10px!important;margin-right: 2px;}
+@media(max-width:960px){
+  #fixed{display:none}
+}

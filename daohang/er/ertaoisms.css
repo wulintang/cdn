@@ -1,0 +1,41 @@
+.kz-pc-side-nav {
+	width:140px;
+	position: fixed;
+    display: flex;
+	top:90px;
+	left:0%;
+	margin-left:280px;
+    opacity: 1;
+    transform: scale(1);
+}
+.kz-pc-side-nav #qr-code-inner {
+	background:#fff;
+	width:100%;
+	text-align:center;
+	padding:10px;
+	box-sizing:border-box;
+}
+.kz-pc-side-nav #qr-code-inner img {
+	width:100px;
+	height:100px;
+	margin:auto
+}
+.kz-pc-side-nav #qr-code-inner p {
+	text-align:center;
+	line-height:140%;
+	margin-top:5px;
+}
+.kz-pc-side-nav .kz-ad {
+	text-align:center;
+	line-height:140%;
+	margin-top:20px;
+}
+.kz-pc-side-nav .kz-ad a {
+	color:#80a4f9;
+}
+.kz-pc-side-nav.scrolling {
+	position:fixed;
+}
+@media screen and ( max-width: 1500px ) {
+  .kz-pc-side-nav{display:none; }
+}

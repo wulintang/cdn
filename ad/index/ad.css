@@ -1,0 +1,30 @@
+.AdblockBanner {
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+    padding: 15px;
+    line-height: 28px;
+    color: #8f9bb6;
+    text-align: center;
+    background-color: #fff;
+    font-size: 16px;
+}
+.AdblockBanner .close {
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    width: 17px;
+    height: 17px;
+    background-image: url(https://1.taoisms.org/ad/index/close.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 17px 17px;
+    cursor: pointer;
+}
+.AdblockBanner  a.f {
+    border-bottom: 1px solid #8f9bb6;
+    color: #8f9bb6;
+    display: inline-block;
+}

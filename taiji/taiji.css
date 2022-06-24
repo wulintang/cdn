@@ -1,0 +1,43 @@
+@font-face {font-family:FZCuJinLFW;src:url(https://www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/FZCuJinLFW.TTF);}
+@font-face {font-family:TTTGB;src:url(https://www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/TTTGB.ttf);}
+@font-face {font-family:xingkaiziti;src:url(https://www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/xingkai.ttf);}
+.chromeframe {margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}
+#loader-wrapper {position:fixed;top:0;left:0;width:100%;height:100%;z-index:999999;background:linear-gradient(90deg,rgb(255,165,150) 10%,rgb(0,228,255)) no-repeat;}
+#loader {display:block;position:relative;left:50%;top:50%;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:50%;border:3px solid transparent;-webkit-animation:spin 2s linear infinite;-ms-animation:spin 2s linear infinite;-moz-animation:spin 2s linear infinite;-o-animation:spin 2s linear infinite;animation:spin 2s linear infinite;z-index:1001}
+.loaded #loader {opacity:0;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}
+.loaded #loader-wrapper {visibility:hidden;}
+.no-js #loader-wrapper {display:none}
+.no-js h1 {color:#222}
+#loader-wrapper #load_title {font-family:FZCuJinLFW;color:#000;font-size:19px;width:100%;text-align:center;z-index:9999999999999;position:absolute;opacity:1;line-height:30px}
+#loader-wrapper #load_title span {font-weight:normal;font-style:italic;font-size:13px;color:#FFF;opacity:.5}
+.divClass {border:100px solid;border-color:white white black black;width:0;height:0;border-radius:100%;top:100px;margin:200px auto;transform-origin:50% 50%;animation:run 2.5s linear infinite;box-shadow:0 0 50px #707070;}
+@keyframes run {from {transform:rotate(0deg);}
+to {transform:rotate(360deg);}
+}
+.divClass:before {content:"";position:absolute;top:-85px;left:-85px;width:100px;height:100px;background-color:black;border-radius:100%;}
+.divClass:after {content:"";position:absolute;top:-15px;left:-14px;width:100px;height:100px;background-color:white;border-radius:100%;}
+.taijileft {background-color:white;width:50px;height:50px;position:relative;border-radius:100%;top:-65px;left:-65px;}
+.taijiright {background-color:black;width:50px;height:50px;position:relative;border-radius:100%;top:-40px;left:15px;z-index:1;}
+.deng-box {position:fixed;top:-40px;right:-20px;z-index:9999999;}
+.deng-box1 {position:fixed;top:-30px;right:10px;z-index:9999999;}
+.deng-box1 .deng {position:relative;width:120px;height:90px;margin:50px;background:#d8000f;background:rgba(216,0,15,0.9);border-radius:50% 50%;-webkit-transform-origin:50% -100px;-webkit-animation:swing 5s infinite ease-in-out;box-shadow:-5px 5px 50px 4px rgba(250,108,0,1);}
+.deng {position:relative;width:120px;height:90px;margin:50px;background:#d8000f;background:rgba(216,0,15,0.9);border-radius:50% 50%;-webkit-transform-origin:50% -100px;-webkit-animation:swing 3s infinite ease-in-out;box-shadow:-5px 5px 50px 4px rgba(250,108,0,1);}
+.xian {position:absolute;top:-20px;left:60px;width:2px;height:20px;background:#dc8f03;}
+.deng-a {width:100px;height:90px;background:#d8000f;background:rgba(216,0,15,0.2);margin:12px 8px 8px 8px;border-radius:50% 50%;border:2px solid #dc8f03;}
+.deng-b {width:45px;height:90px;background:#d8000f;background:rgba(216,0,15,0.2);margin:-4px 8px 8px 26px;border-radius:50% 50%;border:2px solid #dc8f03;}
+.shui {width:5px;height:40px;background:#ffa500;border-radius:0 0 5px 5px;}
+.shui-a {margin:-10px 0 0 40px;-webkit-animation:swing 4s infinite ease-in-out;-webkit-transform-origin:50% -20px;}
+.shui-b {margin:-35px 0 0 59px;-webkit-animation:swing 4s infinite ease-in-out;-webkit-transform-origin:50% -45px;}
+.shui-c {margin:-45px 0 0 77px;-webkit-animation:swing 4s infinite ease-in-out;-webkit-transform-origin:50% -25px;}
+.deng:before {position:absolute;top:-7px;left:29px;height:12px;width:60px;content:" ";display:block;z-index:999;border-radius:5px 5px 0 0;border:solid 1px #dc8f03;background:#ffa500;background:linear-gradient(to right,#dc8f03,#ffa500,#dc8f03,#ffa500,#dc8f03);}
+.deng:after {position:absolute;bottom:-7px;left:10px;height:12px;width:60px;content:" ";display:block;margin-left:20px;border-radius:0 0 5px 5px;border:solid 1px #dc8f03;background:#ffa500;background:linear-gradient(to right,#dc8f03,#ffa500,#dc8f03,#ffa500,#dc8f03);}
+.deng-t {font-family:xingkaiziti!important;font-size:3.2rem;color:#dc8f03;font-weight:bold;line-height:85px;text-align:center;}
+.night .deng-t,.night .deng-box,.night .deng-box1 {background:transparent !important;}
+@-moz-keyframes swing {0% {-moz-transform:rotate(-10deg)}
+50% {-moz-transform:rotate(10deg)}
+100% {-moz-transform:rotate(-10deg)}
+}
+@-webkit-keyframes swing {0% {-webkit-transform:rotate(-10deg)}
+50% {-webkit-transform:rotate(10deg)}
+100% {-webkit-transform:rotate(-10deg)}
+}

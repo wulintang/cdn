@@ -1,0 +1,47 @@
+#fixed {
+	background-color:#D14836;
+	width:44px;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:99999;
+    font: 12px/1.5 -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+    font-weight: 300;
+}
+#fixed #dd {
+	list-style:none!important;
+	padding:0px!important;
+	margin:0px!important;
+	width:44px!important;
+	position:absolute!important;
+	right:0!important;
+	top:35%!important;
+	bottom:0!important;
+	vertical-align:middle!important;
+	margin-top:-240px!important;
+}
+#fixed #dt {
+    background-color:#000000;
+	position:absolute;
+	width:44px;
+	display:block;
+	bottom:85px;
+}
+#fixed #dd {
+	border-bottom:1px solid #000000;
+}
+#fixed a,#fixed a:link,#fixed a:visited {
+    text-decoration: none;
+    display: block;
+    color: #f4e0a7;
+    text-align: center;
+    overflow: hidden;
+    padding: 5px;
+}
+#fixed a:hover {
+	background-color:#000000;
+}
+#feedAv{ margin-top: -250px!important;transform: scale(0);}
+@media(max-width:960px){
+  #fixed{display:none}
+}
