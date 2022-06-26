@@ -1,0 +1,115 @@
+
+@charset "utf-8";
+/* 南通伍林堂文化传播有限公司设计一部二〇二二年六月十九日 采用字体全局配置 */
+/* oppo 开源字体*/
+@font-face {
+	font-family: 'OPPOSans-M';
+	font-style: normal;
+	font-display:swap;
+	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/font-opposans/OPPOSans-M.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'OPPOSans-R';
+	font-style: normal;
+	font-display:swap;
+	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/font-opposans/OPPOSans-R.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'OPPOSans-B';
+	font-style: normal;
+	font-display:swap;
+	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/font-opposans/OPPOSans-B.ttf') fformat('truetype');
+}
+@font-face {
+	font-family: 'OPPOSans-L';
+	font-style: normal;
+	font-display:swap;
+	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/font-opposans/OPPOSans-L.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'OPPOSans-H';
+	font-style: normal;
+	font-display:swap;
+	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/font-opposans/OPPOSans-H.ttf') format('truetype');
+}
+/* 鸿蒙开原字体 */
+@font-face {
+	font-family: 'HarmonyOS_Sans_Black';
+	font-style: normal;
+	font-display:swap;
+	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/HarmonyOS Sans/HarmonyOS_Sans/HarmonyOS_Sans_Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'HarmonyOS_Sans_Bold';
+	font-style: normal;
+	font-display:swap;
+	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/HarmonyOS Sans/HarmonyOS_Sans/HarmonyOS_Sans_Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'HarmonyOS_Sans_Light';
+	font-style: normal;
+	font-display:swap;
+	src:url('//fwww.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/HarmonyOS Sans/HarmonyOS_Sans/HarmonyOS_Sans_Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'HarmonyOS_Sans_Medium';
+	font-style: normal;
+	font-display:swap;
+	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/HarmonyOS Sans/HarmonyOS_Sans/HarmonyOS_Sans_Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'HarmonyOS_Sans_Regular';
+	font-style: normal;
+	font-display:swap;
+	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/HarmonyOS Sans/HarmonyOS_Sans/HarmonyOS_Sans_Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'HarmonyOS_Sans_Thin';
+	font-style: normal;
+	font-display:swap;
+	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/HarmonyOS Sans/HarmonyOS_Sans/HarmonyOS_Sans_Thin.ttf') format('truetype');
+}
+/* 粗宋 */
+@font-face {
+    font-family:'cusong';
+    font-style: normal;
+	font-display:swap;
+    src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/cusong.ttf') format('truetype');
+}
+/* 方正粗金陵繁体 */
+@font-face {
+    font-family:'FZCuJinLFW';
+    font-style: normal;
+	font-display:swap;
+    src:url('//fwww.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/FZCuJinLFW.TTF') format('truetype');
+}
+/* 田园字体 */    
+@font-face {
+    font-family: 'webmo';
+    font-style: normal;
+    font-display: swap;
+    src: url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/webmo.ttf') format('truetype');
+}
+/* 九叠云篆 */
+@font-face {
+    font-family:'jiudie';
+    font-style: normal;
+    font-display: swap;
+    src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/jiudie.ttf') format('truetype');
+}
+/* Ammonite */
+@font-face {
+    font-family:'Ammonite';
+    font-style: normal;
+    font-display: swap;
+    src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/Ammonite.otf') format('opentype');
+}
+/* 娃娃字体 */
+@font-face {
+	font-family:'lizihan';
+    font-style: normal;
+    font-display: swap;	
+	src:url('//fwww.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/lizihan.otf') format('opentype');}
+/* 全局字体 */
+body, button, input, select, textarea {font-family: OPPOSans-R!important;}
+h1, h2, h3, h4, h5, h6 {font-family: OPPOSans-M!important;}
