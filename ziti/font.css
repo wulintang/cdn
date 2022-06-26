@@ -5,45 +5,8 @@
 @font-face {
 	font-family: 'OPPOSans-M';
 	font-style: normal;
-	font-display:optional；
+	font-display:optional;
 	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/font-opposans/OPPOSans-M.ttf') format('truetype');
-}
-/* 鸿蒙开原字体 */
-@font-face {
-	font-family: 'HarmonyOS_Sans_Black';
-	font-style: normal;
-	font-display:optional;
-	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/HarmonyOS Sans/HarmonyOS_Sans/HarmonyOS_Sans_Black.ttf') format('truetype');
-}
-@font-face {
-	font-family: 'HarmonyOS_Sans_Bold';
-	font-style: normal;
-	font-display:optional;
-	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/HarmonyOS Sans/HarmonyOS_Sans/HarmonyOS_Sans_Bold.ttf') format('truetype');
-}
-@font-face {
-	font-family: 'HarmonyOS_Sans_Light';
-	font-style: normal;
-	font-display:optional;
-	src:url('//fwww.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/HarmonyOS Sans/HarmonyOS_Sans/HarmonyOS_Sans_Light.ttf') format('truetype');
-}
-@font-face {
-	font-family: 'HarmonyOS_Sans_Medium';
-	font-style: normal;
-	font-display:optional;
-	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/HarmonyOS Sans/HarmonyOS_Sans/HarmonyOS_Sans_Medium.ttf') format('truetype');
-}
-@font-face {
-	font-family: 'HarmonyOS_Sans_Regular';
-	font-style: normal;
-	font-display:optional;
-	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/HarmonyOS Sans/HarmonyOS_Sans/HarmonyOS_Sans_Regular.ttf') format('truetype');
-}
-@font-face {
-	font-family: 'HarmonyOS_Sans_Thin';
-	font-style: normal;
-	font-display:optional;
-	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/HarmonyOS Sans/HarmonyOS_Sans/HarmonyOS_Sans_Thin.ttf') format('truetype');
 }
 /* 粗宋 */
 @font-face {
@@ -87,5 +50,4 @@
     font-display: optional;	
 	src:url('//fwww.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/lizihan.otf') format('opentype');}
 /* 全局字体 */
-body, button, input, select, textarea {font-family: OPPOSans-R!important;}
-h1, h2, h3, h4, h5, h6 {font-family: OPPOSans-M!important;}
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {font-family: OPPOSans-M!important;}
