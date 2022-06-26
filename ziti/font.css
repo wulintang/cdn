@@ -3,10 +3,10 @@
 /* 南通伍林堂文化传播有限公司设计一部二〇二二年六月十九日 采用字体全局配置 */
 /* oppo 开源字体*/
 @font-face {
-	font-family: 'OPPOSans-M';
+	font-family: 'OPPO-OS';
 	font-style: normal;
 	font-display:optional;
-	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/font-opposans/OPPOSans-M.ttf') format('truetype');
+	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/font-opposans/OPPO-OS.woff2') format('woff2');
 }
 /* 粗宋 */
 @font-face {
@@ -50,4 +50,4 @@
     font-display: optional;	
 	src:url('//fwww.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/lizihan.otf') format('opentype');}
 /* 全局字体 */
-body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {font-family: OPPOSans-M!important;}
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {font-family: OPPO-OS!important;}
