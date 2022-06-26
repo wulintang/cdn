@@ -5,49 +5,49 @@
 @font-face {
 	font-family: 'OPPO-OS';
 	font-style: normal;
-	font-display:optional;
+	font-display:swap;
 	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/font-opposans/OPPO-OS.woff2') format('woff2');
 }
 /* 粗宋 */
 @font-face {
     font-family:'cusong';
     font-style: normal;
-	font-display:optional;
+	font-display:swap;
     src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/cusong.ttf') format('truetype');
 }
 /* 方正粗金陵繁体 */
 @font-face {
     font-family:'FZCuJinLFW';
     font-style: normal;
-	font-display:optional;
+	font-display:swap;
     src:url('//fwww.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/FZCuJinLFW.TTF') format('truetype');
 }
 /* 田园字体 */    
 @font-face {
     font-family: 'webmo';
     font-style: normal;
-    font-display: optional;
+    font-display: swap;
     src: url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/webmo.ttf') format('truetype');
 }
 /* 九叠云篆 */
 @font-face {
     font-family:'jiudie';
     font-style: normal;
-    font-display: optional;
+    font-display: swap;
     src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/jiudie.ttf') format('truetype');
 }
 /* Ammonite */
 @font-face {
     font-family:'Ammonite';
     font-style: normal;
-    font-display: optional;
+    font-display: swap;
     src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/Ammonite.otf') format('opentype');
 }
 /* 娃娃字体 */
 @font-face {
 	font-family:'lizihan';
     font-style: normal;
-    font-display: optional;	
+    font-display: swap;	
 	src:url('//fwww.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/lizihan.otf') format('opentype');}
 /* 全局字体 */
 body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {font-family: OPPO-OS!important;}
