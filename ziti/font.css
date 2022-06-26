@@ -8,30 +8,6 @@
 	font-display:optional；
 	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/font-opposans/OPPOSans-M.ttf') format('truetype');
 }
-@font-face {
-	font-family: 'OPPOSans-R';
-	font-style: normal;
-	font-display:optional;
-	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/font-opposans/OPPOSans-R.ttf') format('truetype');
-}
-@font-face {
-	font-family: 'OPPOSans-B';
-	font-style: normal;
-	font-display:optional;
-	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/font-opposans/OPPOSans-B.ttf') fformat('truetype');
-}
-@font-face {
-	font-family: 'OPPOSans-L';
-	font-style: normal;
-	font-display:optional;
-	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/font-opposans/OPPOSans-L.ttf') format('truetype');
-}
-@font-face {
-	font-family: 'OPPOSans-H';
-	font-style: normal;
-	font-display:optional;
-	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/font-opposans/OPPOSans-H.ttf') format('truetype');
-}
 /* 鸿蒙开原字体 */
 @font-face {
 	font-family: 'HarmonyOS_Sans_Black';
