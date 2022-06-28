@@ -20,7 +20,7 @@
     font-family:'FZCuJinLFW';
     font-style: normal;
 	font-display:swap;
-    src:url('//fwww.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/FZCuJinLFW.TTF') format('truetype');
+    src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/FZCuJinLFW.TTF') format('truetype');
 }
 /* 田园字体 */    
 @font-face {
@@ -48,6 +48,6 @@
 	font-family:'lizihan';
     font-style: normal;
     font-display: swap;	
-	src:url('//fwww.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/lizihan.otf') format('opentype');}
+	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/lizihan.otf') format('opentype');}
 /* 全局字体 */
 body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {font-family: OPPO-OS!important;}
