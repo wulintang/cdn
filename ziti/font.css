@@ -8,13 +8,6 @@
 	font-display:swap;
 	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/font-opposans/OPPO-OS.woff2') format('woff2');
 }
-/* 粗宋 */
-@font-face {
-    font-family:'cusong';
-    font-style: normal;
-	font-display:swap;
-    src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/cusong.woff2') format('woff2');
-}
 /* 方正粗金陵繁体 */
 @font-face {
     font-family:'FZCuJinLFW';
