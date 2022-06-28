@@ -13,7 +13,7 @@
     font-family:'cusong';
     font-style: normal;
 	font-display:swap;
-    src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/cusong.ttf') format('truetype');
+    src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/cusong.woff2') format('woff2');
 }
 /* 方正粗金陵繁体 */
 @font-face {
