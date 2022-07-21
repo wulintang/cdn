@@ -3,7 +3,7 @@ document.writeln("<script>");
 document.writeln("swal({");
 document.writeln("  icon: \'warning\',");
 document.writeln("  title: \'关于终止宗教内容的通知\',");
-document.writeln("  text:\'公司董事会于二〇二二年七月十九日召开了第三任董事会第一次（二〇二二〇〇二）会议，审议通过了《关于南通伍林堂文化传播有限公司禁止传播互联网宗教的议案》。南通伍林堂文化传播有限公司将于二〇二二年十二月三十一日为终结线，将通过江苏省通信管理局、南通市公安局通州分局网安大队注销所有宗教类型网站的信息内容传播及备案，便于后续股份权属转让的行为顺利进行。\',");
+document.writeln("  text:\'伍林堂公司董事会第三任董事会第一次会议，审议通过了《关于南通伍林堂文化传播有限公司禁止传播互联网宗教的议案》。南通伍林堂文化传播有限公司将于二〇二二年十二月三十一日为终结线，将旗下宗教内容下架。用户请及时对伍林堂奖励给您的所有收入提现，自二〇二二年七月二十一日起，伍林堂公司将不对旗下宗教类型网站提供技术支撑，特此通知。\',");
 document.writeln("});");
 document.writeln("</script>");
 document.writeln("<style>.swal-text:{text-indent:2em!important;}</style>");
