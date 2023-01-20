@@ -125,27 +125,3 @@ jQuery(document).ready(function($) {
     });
 })
 ;
-//document.writeln("<!-- 灯笼 1 -->");
-//document.writeln("<div class=\'deng-box\'>");
-//document.writeln("<div class=\'deng\'>");
-//document.writeln("<div class=\'xian\'></div>")
-//document.writeln("<div class=\'deng-a\'>");
-//document.writeln("<div class=\'deng-b\'><div class=\'deng-t\'>节</div></div>");
-//document.writeln("</div>");
-//document.writeln("<div class=\'shui shui-a\'></div>");
-//document.writeln("<div class=\'shui shui-b\'></div>");
-//document.writeln("<div class=\'shui shui-c\'></div>");
-//document.writeln("</div>");
-//document.writeln("</div>");
-//document.writeln("<!-- 灯笼 2 -->");
-//document.writeln("<div class=\'deng-box1\'>");
-//document.writeln("<div class=\'deng\'>");
-//document.writeln("<div class=\'xian\'></div>")
-//document.writeln("<div class=\'deng-a\'>");
-//document.writeln("<div class=\'deng-b\'><div class=\'deng-t\'>春</div></div>");
-//document.writeln("</div>");
-//document.writeln("<div class=\'shui shui-a\'></div>");
-//document.writeln("<div class=\'shui shui-b\'></div>");
-//document.writeln("<div class=\'shui shui-c\'></div>");
-//document.writeln("</div>");
-//document.writeln("</div>");
