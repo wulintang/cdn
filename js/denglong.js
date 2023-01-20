@@ -199,7 +199,7 @@ document.writeln("        background: orange;");
 document.writeln("        background: linear-gradient(to right, #dc8f03, orange, #dc8f03, orange, #dc8f03)");
 document.writeln("    }");
 document.writeln("    .deng-t {");
-document.writeln("        font-size:2rem;");
+document.writeln("        font-size:30px!important;");
 document.writeln("        color: #dc8f03;");
 document.writeln("        font-weight: 700;");
 document.writeln("        line-height: 85px;");
