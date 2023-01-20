@@ -232,5 +232,6 @@ document.writeln("        100% {");
 document.writeln("            -webkit-transform: rotate(-10deg)");
 document.writeln("        }");
 document.writeln("    }");
+document.writeln(".deng-box2,.deng-box,.deng-box1,.deng-box3 {z-index: 9999999999999999999!important;}");
 document.writeln("@media(max-width:960px){.deng-box,.deng-box1,.deng-box2,.deng-box3 {display: none!important;}}");
 document.writeln("</style>");
