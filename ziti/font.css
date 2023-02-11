@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 /* 南通伍林堂文化传播有限公司设计一部二〇二二年六月十九日 采用字体全局配置 */
 /* oppo 开源字体*/
@@ -13,34 +12,27 @@
     font-family:'FZCuJinLFW';
     font-style: normal;
 	font-display:swap;
-    src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/FZCuJinLFW.TTF') format('truetype');
-}
-/* 田园字体 */    
-@font-face {
-    font-family: 'webmo';
-    font-style: normal;
-    font-display: swap;
-    src: url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/webmo.ttf') format('truetype');
+    src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/FZCuJinLFW.woff2') format('woff2');
 }
 /* 九叠云篆 */
 @font-face {
     font-family:'jiudie';
     font-style: normal;
     font-display: swap;
-    src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/jiudie.ttf') format('truetype');
+    src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/jiudie.woff2') format('woff2');
 }
 /* Ammonite */
 @font-face {
     font-family:'Ammonite';
     font-style: normal;
     font-display: swap;
-    src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/Ammonite.otf') format('opentype');
+    src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/Ammonite.woff2') format('woff2');
 }
 /* 娃娃字体 */
 @font-face {
 	font-family:'lizihan';
     font-style: normal;
     font-display: swap;	
-	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/lizihan.otf') format('opentype');}
+	src:url('//www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ziti/ziti/lizihan.woff2') format('woff2');}
 /* 全局字体 */
 body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {font-family: OPPO-OS!important;}
