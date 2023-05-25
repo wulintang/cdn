@@ -1,5 +1,8 @@
 document.writeln("<div class=\'security-help-wrapper\'><div class=\'security-help\'><div class=\'sh-head\'><img src=\'https://www.wulintang.net/Public/Index/images/logo.png\'><span>安全漏洞<br>信息反馈</span></div><div class=\'sh-body\'><p>如果您发现伍林堂下属产品存在安全漏洞，欢迎将漏洞信息发送给<a target=\'_blank\'href=\'http://www.wulintang.net/\'><em>伍林堂安全应急响应中心</em></a></p></div></div></div>");
 document.writeln("<style type=text/css>");
+document.writeln(".security-help-wrapper {");
+document.writeln("    padding: 2%;");
+document.writeln("}");
 document.writeln(".security-help {");
 document.writeln("	width:calc(100% - 40px);");
 document.writeln("	max-width:460px;");
@@ -54,7 +57,8 @@ document.writeln("	white-space:nowrap;");
 document.writeln("	text-decoration:underline;");
 document.writeln("	cursor:pointer;");
 document.writeln("}");
-document.writeln(".security-head .sh-body em a {");
+document.writeln(".security-head .sh-body a {");
+document.writeln("    text-decoration: none;");
 document.writeln("    color:#004c98;");
 document.writeln("}");
 document.writeln("@media (max-width:700px) {");
