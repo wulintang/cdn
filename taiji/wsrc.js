@@ -1,80 +1,80 @@
 document.writeln("<div class=\'security-help-wrapper\'><div class=\'security-help\'><div class=\'sh-head\'><img src=\'https://www.wulintang.net/Public/Index/images/logo.png\'><span>安全漏洞<br>信息反馈</span></div><div class=\'sh-body\'><p>如果您发现伍林堂下属产品存在安全漏洞，欢迎将漏洞信息发送给<a target=\'_blank\'href=\'http://www.wulintang.net/\'><em>伍林堂安全应急响应中心</em></a></p></div></div></div>");
-<style type=text/css>
-.security-help {
-	width:calc(100% - 40px);
-	max-width:460px;
-	margin:0 auto;
-	display:flex;
-	align-items:stretch;
-	justify-content:center;
-	color:#666;
-	font-size:13px;
-}
-.security-help .sh-head {
-	width:114px;
-	min-width:114px;
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	padding:5px;
-	color:#ffffff;
-	background-color:#004c98;
-	border:1px solid #004c98;
-	user-select:none;
-}
-.security-help .sh-head img {
-	width:28px;
-	min-width:28px;
-	margin-right:5px;
-	display:block;
-	height:auto;
-	white-space:nowrap;
-}
-.security-help .sh-body {
-	flex:1 1 auto;
-	align-items:center;
-	justify-content:center;
-	padding:8px 10px;
-	background-color:#fff;
-	border:1px solid #004c98;
-	color:#004c98;
-	user-select:none;
-}
-.security-help .sh-body p {
-    color: #004c98!important;
-    margin-bottom: auto!important;
-    line-height: inherit!important;
-    font-size: inherit!important;
-}
-.security-help .sh-body em {
-	display:inline-block;
-	position:relative;
-	font-style:normal;
-	white-space:nowrap;
-	text-decoration:underline;
-	cursor:pointer;
-}
-.security-head .sh-body em a {
-    color:#004c98;
-}
-@media (max-width:700px) {
-	.security-help-wrapper {
-	background-color:#fff;
-}
-.security-help .sh-body {
-	font-size:10px;
-}
-.security-help .sh-head {
-	width:110px;
-	min-width:110px;
-	font-size:12px;
-}
-.security-help .sh-head img {
-	width:26px;
-	min-width:26px;
-}
-.bkt {
-	bottom:15px !important;
-}
-}
-</style>
+document.writeln("<style type=text/css>");
+document.writeln(".security-help {");
+document.writeln("	width:calc(100% - 40px);");
+document.writeln("	max-width:460px;");
+document.writeln("	margin:0 auto;");
+document.writeln("	display:flex;");
+document.writeln("	align-items:stretch;");
+document.writeln("	justify-content:center;");
+document.writeln("	color:#666;");
+document.writeln("	font-size:13px;");
+document.writeln("}");
+document.writeln(".security-help .sh-head {");
+document.writeln("	width:114px;");
+document.writeln("	min-width:114px;");
+document.writeln("	display:flex;");
+document.writeln("	align-items:center;");
+document.writeln("	justify-content:center;");
+document.writeln("	padding:5px;");
+document.writeln("	color:#ffffff;");
+document.writeln("	background-color:#004c98;");
+document.writeln("	border:1px solid #004c98;");
+document.writeln("	user-select:none;");
+document.writeln("}");
+document.writeln(".security-help .sh-head img {");
+document.writeln("	width:28px;");
+document.writeln("	min-width:28px;");
+document.writeln("	margin-right:5px;");
+document.writeln("	display:block;");
+document.writeln("	height:auto;");
+document.writeln("	white-space:nowrap;");
+document.writeln("}");
+document.writeln(".security-help .sh-body {");
+document.writeln("	flex:1 1 auto;");
+document.writeln("	align-items:center;");
+document.writeln("	justify-content:center;");
+document.writeln("	padding:8px 10px;");
+document.writeln("	background-color:#fff;");
+document.writeln("	border:1px solid #004c98;");
+document.writeln("	color:#004c98;");
+document.writeln("	user-select:none;");
+document.writeln("}");
+document.writeln(".security-help .sh-body p {");
+document.writeln("    color: #004c98!important;");
+document.writeln("    margin-bottom: auto!important;");
+document.writeln("    line-height: inherit!important;");
+document.writeln("    font-size: inherit!important;");
+document.writeln("}");
+document.writeln(".security-help .sh-body em {");
+document.writeln("	display:inline-block;");
+document.writeln("	position:relative;");
+document.writeln("	font-style:normal;");
+document.writeln("	white-space:nowrap;");
+document.writeln("	text-decoration:underline;");
+document.writeln("	cursor:pointer;");
+document.writeln("}");
+document.writeln(".security-head .sh-body em a {");
+document.writeln("    color:#004c98;");
+document.writeln("}");
+document.writeln("@media (max-width:700px) {");
+document.writeln("	.security-help-wrapper {");
+document.writeln("	background-color:#fff;");
+document.writeln("}");
+document.writeln(".security-help .sh-body {");
+document.writeln("	font-size:10px;");
+document.writeln("}");
+document.writeln(".security-help .sh-head {");
+document.writeln("	width:110px;");
+document.writeln("	min-width:110px;");
+document.writeln("	font-size:12px;");
+document.writeln("}");
+document.writeln(".security-help .sh-head img {");
+document.writeln("	width:26px;");
+document.writeln("	min-width:26px;");
+document.writeln("}");
+document.writeln(".bkt {");
+document.writeln("	bottom:15px !important;");
+document.writeln("}");
+document.writeln("}");
+document.writeln("</style>");
