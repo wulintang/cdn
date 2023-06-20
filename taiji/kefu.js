@@ -1,6 +1,6 @@
 const cssString = `
 .qq-client{position:fixed;right:0px;top:50%;margin-top:-80px;}
-.qq-client a{width:50px;height:160px;text-align:center;border:#ebebeb solid 1px;padding:0px 0px;line-height:40px;display:block;background-color: #fff;}
+.qq-client a{text-align: center;line-height: 40px;font-size: 14px;}
 .qq-client-content{position:fixed;right:-250px;top:38%;border:#ebebeb solid 1px;width:10%;display:none;background:#ffffff;}
 .qq-client-content h1{font-size:14px;width:90%;margin:0px auto;text-align:center;height:50px;line-height:50px;border-bottom:#ebebeb solid 1px;position:relative;}
 .qq-client-content h1 span{font-size:12px;font-weight:normal;position:absolute;left:-30px;top:-20px;cursor:pointer;background:#ffffff;border:#ebebeb solid 1px;width:40px;height:40px;line-height:40px;border-radius:20px;text-align:center;}
@@ -53,7 +53,7 @@ $(function(){
             }, 400);
             $('.qq-client-content').animate({
                 right: '-250',
-                opacity: 'hide' // 将此处的'show'改为'hide'
+                opacity: 'show' // 将此处的'show'改为'hide'
             }, 800);
         });
     };
