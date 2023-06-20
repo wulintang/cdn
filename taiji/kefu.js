@@ -1,15 +1,15 @@
 const cssString = `
-.qq-client{position:fixed;right:0px;top:50%;margin-top:-80px;}
-.qq-client .qq-client-open a{width:50px;height:160px;text-align:center;border:#ebebeb solid 1px;padding:0px 0px;line-height:40px;display:block;background-color: #fff;}
-.qq-client .qq-client-content{position:fixed;right:-250px;top:38%;border:#ebebeb solid 1px;width:10%;display:none;background:#ffffff;}
-.qq-client .qq-client-content h1{font-size:14px;width:90%;margin:0px auto;text-align:center;height:50px;line-height:50px;border-bottom:#ebebeb solid 1px;position:relative;}
-.qq-client .qq-client-content h1 span{font-size:12px;font-weight:normal;position:absolute;left:-30px;top:-20px;cursor:pointer;background:#ffffff;border:#ebebeb solid 1px;width:40px;height:40px;line-height:40px;border-radius:20px;text-align:center;}
-.qq-client .qq-client-list{background:#ffffff;}
-.qq-client .client-list{overflow: hidden;line-height: 300%;width: 100%;margin: 0px auto;border-bottom: dashed 1px #ebebeb;text-align: center;}
-.qq-client .client-list a{display:block;}
-.qq-client .client-list a:hover{color:red;}
-.qq-client .client-list span{float:left;}
-.qq-client .client-list label{float:left;width:60px;text-align:right;padding-right:10px;}
+#qq-client{position:fixed;right:0px;top:50%;margin-top:-80px;}
+#qq-client-open {width:50px;height:160px;text-align:center;border:#ebebeb solid 1px;padding:0px 0px;line-height:40px;display:block;background-color: #fff;}
+#qq-client #qq-client-content{position:fixed;right:-250px;top:38%;border:#ebebeb solid 1px;width:10%;display:none;background:#ffffff;}
+#qq-client #qq-client-content h1{font-size:14px;width:90%;margin:0px auto;text-align:center;height:50px;line-height:50px;border-bottom:#ebebeb solid 1px;position:relative;}
+#qq-client #qq-client-content h1 span{font-size:12px;font-weight:normal;position:absolute;left:-30px;top:-20px;cursor:pointer;background:#ffffff;border:#ebebeb solid 1px;width:40px;height:40px;line-height:40px;border-radius:20px;text-align:center;}
+#qq-client #qq-client-list{background:#ffffff;}
+#qq-client .client-list{overflow: hidden;line-height: 300%;width: 100%;margin: 0px auto;border-bottom: dashed 1px #ebebeb;text-align: center;}
+#qq-client .client-list a{display:block;}
+#qq-client .client-list a:hover{color:red;}
+#qq-client .client-list span{float:left;}
+#qq-client .client-list label{float:left;width:60px;text-align:right;padding-right:10px;}
 `;
 
 $(function(){
@@ -17,11 +17,11 @@ $(function(){
     $('<style>').text(cssString).appendTo('head');
 
     const qqClientTemplate = `
-    <div class="qq-client">
-        <a href="javascript:void(0);" class="qq-client-open"><p>点</p><p>击</p><p>展</p><p>开</p></a>
-        <div class="qq-client-content">
-            <h1>功能中心<span class="qq-client-close">关闭</span></h1>
-            <div class="qq-client-list">
+    <div id="qq-client">
+        <a href="javascript:void(0);" id="qq-client-open"><p>点</p><p>击</p><p>展</p><p>开</p></a>
+        <div id="qq-client-content">
+            <h1>功能中心<span id="qq-client-close">关闭</span></h1>
+            <div id="qq-client-list">
                 <div class="client-list"><a href="https://www.wulintang.cn/bbs/fid/2/" target="_blank">意见建议</a> </div>
                 <div class="client-list"><a href="https://www.wulintang.cn/bbs/fid/1/" target="_blank">问题反馈</a> </div>
                 <div class="client-list"><a href="mailto:jubao@ccwadj.cn">投诉举报</a> </div>
@@ -34,21 +34,21 @@ $(function(){
     `;
 
     // 点击展开和关闭
-    $('.qq-client-open').click(function(){
-        $('.qq-client').animate({
+    $('#qq-client-open').click(function(){
+        $('#qq-client').animate({
             right: '-50'
         }, 400);
-        $('.qq-client-content').animate({
+        $('#qq-client-content').animate({
             right: '0',
             opacity: 'show'
         }, 800);
     });
-    $('.qq-client-close').click(function(){
-        $('.qq-client').animate({
+    $('#qq-client-close').click(function(){
+        $('#qq-client').animate({
             right: '0',
             opacity: 'show'
         }, 400);
-        $('.qq-client-content').animate({
+        $('#qq-client-content').animate({
             right: '-250',
             opacity: 'show'
         }, 800);
