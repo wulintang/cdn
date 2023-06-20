@@ -41,7 +41,8 @@ document.writeln("			</div>");
 document.writeln("		</div>");
 document.writeln("	</div>");
 document.writeln("</div>");
-$(document).ready(function() {
+jQuery.noConflict();
+jQuery(document).ready(function($) {
     /* ----- 侧边悬浮 ---- */
     $(document).on("mouseenter", ".suspension .a", function() {
         var _this = $(this);
@@ -83,5 +84,4 @@ $(document).ready(function() {
             }
         }
     });
-
 });
