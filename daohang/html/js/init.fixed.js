@@ -42,8 +42,8 @@ $(document).ready(() => {
         </div>
       </div>
     `;
-    const $fixed = $(code).hide().appendTo('body').fixed({ x: _st == 1 ? -44 : 0, y: 0 }).fadeIn(500);
-    if (_st == 1) {
+    const $fixed = $(code).hide().appendTo('body').fixed({ x: st == 1 ? -44 : 0, y: 0 }).fadeIn(500);
+    if (st == 1) {
       $('#fixed #dt a.#close').width('68px');
     }
     $('#fixed #dt').click(() => {
