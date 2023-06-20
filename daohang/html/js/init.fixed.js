@@ -16,29 +16,28 @@ var browser={
 	}(),
 	language:(navigator.browserLanguage || navigator.language).toLowerCase()
 }
-jQuery(document).ready(function(){
+$(document).ready(function(){
 	if(!browser.versions.mobile){
-		var _st = jQuery.cookie("fixed");
+		var _st = $.cookie("fixed");
 		if(!_st)_st=0;
-		var _code = '<div id="fixed"><div id="dl"><div id="dd"><a href="https://www.taoisms.org.cn" target="_blank"><i class="iconfont icon-taoismsicon"></i><br>门户</a><a href="https://www.snsou.cn/" target="_blank"><i class="iconfont icon-snsoucn"></i><br>搜索</a><a href="https://www.zuori.net.cn/" target="_blank"><i class="iconfont icon-zuoritoutiao"></i><br>导航</a>
-		<a href="https://www.daoyue.org.cn/" target="_blank"><><i class="iconfont icon-daoyueorgcn"></i><br>道乐</a><a href="https://www.chndao.com/" target="_blank"><i class="iconfont icon-yundaoshang"></i><br>道商</></a><a href="https://www.yudao.org.cn/" target="_blank"><i class="iconfont icon-yuzhendaoyuan"></i><br>遇真</></a><a href="https://www.zhtaoism.com/" target="_blank"><i class="iconfont icon-zhongwangdaoyan"></i><br>研究</></a><a href="https://www.xiudaohu.cn/" target="_blank"><i class="iconfont icon-taijitubiao"></i><br>百科</></a><a href="https://www.chntaoism.com/" target="_blank"><i class="iconfont icon-xinghanlianmeng"></i><br>同盟</></a><a href="https://www.zhimucishan.com/" target="_blank"><i class="iconfont icon-wulintangyuanxing"></i><br>慈善</></a><a href="https://www.han-zu.cn/" target="_blank"><i class="iconfont icon-yiyannanjing"></i><br>交互</></a></></div></div></div>';
+		var _code = '<div id="fixed" class="xiuxiu"><div id="dl"><div id="dd"><a href="https://www.taoisms.org.cn" target="_blank"><i class="icon icon-taoismsicon"></i><br>门户</a><a href="https://www.snsou.cn/" target="_blank"><i class="icon icon-snsoucn"></i><br>搜索</a><a href="https://www.zuori.net.cn/" target="_blank"><i class="icon icon-zuoritoutiao"></i><br>导航</a><a href="https://www.daoyue.org.cn/" target="_blank"><i class="icon icon-daoyueorgcn"></i><br>道乐</a><a href="https://www.chndao.com/" target="_blank"><i class="icon icon-yundaoshang"></i><br>道商</a><a href="https://www.yudao.org.cn/" target="_blank"><i class="icon icon-yuzhendaoyuan"></i><br>遇真</a><a href="https://www.zhtaoism.com/" target="_blank"><i class="icon icon-zhongwangdaoyan"></i><br>研究</a><a href="https://www.xiudaohu.cn/" target="_blank"><i class="icon icon-taijitubiao"></i><br>百科</a><a href="https://www.chntaoism.com/" target="_blank"><i class="icon icon-xinghanlianmeng"></i><br>同盟</a><a href="https://www.zhimucishan.com/" target="_blank"><i class="icon icon-wulintangyuanxing"></i><br>慈善</a><a href="https://www.han-zu.cn/" target="_blank"><i class="icon icon-yiyannanjing"></i><br>交互</a></div><div id="dt"><a href="javascript:void(0);" id="close" class="xuanzhun"><i class="icon icon-taijitubiao"></i><br></a></div></div></div>';
 		if(_st==1){
-			jQuery(_code).hide().appendTo("body").fixed({x:-44,y:0}).fadeIn(500);
-			jQuery("#fixed #dt a.#close").width('68px');
+			$(_code).hide().appendTo("body").fixed({x:-44,y:0}).fadeIn(500);
+			$("#fixed #dt a.#close").width('68px');
 		} else {
-			jQuery(_code).hide().appendTo("body").fixed({x:0,y:0}).fadeIn(500);
+			$(_code).hide().appendTo("body").fixed({x:0,y:0}).fadeIn(500);
 		}
-		jQuery("#fixed #dt").click(function(){
+		$("#fixed #dt").click(function(){
 			var _left = $("#fixed").offset().left;
 			if(_left>=0){
-				jQuery.cookie("fixed",1,{path:'/'});
-				jQuery("#fixed").animate({left:-44},300,'swing',function(){
+				$.cookie("fixed",1,{path:'/'});
+				$("#fixed").animate({left:-44},300,'swing',function(){
 					$("#fixed #dt a.#close").hide().width('68px').fadeIn(500);
 				});
 			} else {
-				jQuery.cookie("fixed",0,{path:'/'});
-				jQuery("#fixed #dt a.#close").width('44px');
-				jQuery("#fixed").animate({left:0},300,'swing',function(){
+				$.cookie("fixed",0,{path:'/'});
+				$("#fixed #dt a.#close").width('44px');
+				$("#fixed").animate({left:0},300,'swing',function(){
 				});
 			}
 		});
