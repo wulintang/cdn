@@ -1,15 +1,15 @@
 const cssString = `
 .qq-client{position:fixed;right:0px;top:50%;margin-top:-80px;}
-.qq-client a{text-align: center;line-height: 40px;font-size: 14px;}
-.qq-client-content{position:fixed;right:-250px;top:38%;border:#ebebeb solid 1px;width:10%;display:none;background:#ffffff;}
-.qq-client-content h1{font-size:14px;width:90%;margin:0px auto;text-align:center;height:50px;line-height:50px;border-bottom:#ebebeb solid 1px;position:relative;}
-.qq-client-content h1 span{font-size:12px;font-weight:normal;position:absolute;left:-30px;top:-20px;cursor:pointer;background:#ffffff;border:#ebebeb solid 1px;width:40px;height:40px;line-height:40px;border-radius:20px;text-align:center;}
-.qq-client-list{background:#ffffff;}
-.client-list{overflow: hidden;line-height: 300%;width: 100%;margin: 0px auto;border-bottom: dashed 1px #ebebeb;text-align: center;}
-.client-list a{display:block;}
-.client-list a:hover{color:red;}
-.client-list span{float:left;}
-.client-list label{float:left;width:60px;text-align:right;padding-right:10px;}
+.qq-client a{width:50px;height:160px;text-align:center;border:#ebebeb solid 1px;padding:0px 0px;line-height:40px;display:block;background-color: #fff;}
+.qq-client .qq-client-content{position:fixed;right:-250px;top:38%;border:#ebebeb solid 1px;width:10%;display:none;background:#ffffff;}
+.qq-client .qq-client-content h1{font-size:14px;width:90%;margin:0px auto;text-align:center;height:50px;line-height:50px;border-bottom:#ebebeb solid 1px;position:relative;}
+.qq-client .qq-client-content h1 span{font-size:12px;font-weight:normal;position:absolute;left:-30px;top:-20px;cursor:pointer;background:#ffffff;border:#ebebeb solid 1px;width:40px;height:40px;line-height:40px;border-radius:20px;text-align:center;}
+.qq-client .qq-client-list{background:#ffffff;}
+.qq-client .client-list{overflow: hidden;line-height: 300%;width: 100%;margin: 0px auto;border-bottom: dashed 1px #ebebeb;text-align: center;}
+.qq-client .client-list a{display:block;}
+.qq-client .client-list a:hover{color:red;}
+.qq-client .client-list span{float:left;}
+.qq-client .client-list label{float:left;width:60px;text-align:right;padding-right:10px;}
 `;
 
 $(function(){
@@ -33,34 +33,26 @@ $(function(){
     </div>
     `;
 
-    $('body').append(qqClientTemplate);
-
-    H_qqServer = {};
-    H_qqServer.clickOpenServer = function () {
-        $('.qq-client-open').click(function(){
-            $('.qq-client').animate({
-                right: '-50'
-            }, 400);
-            $('.qq-client-content').animate({
-                right: '0',
-                opacity: 'show'
-            }, 800);
-        });
-        $('.qq-client-close').click(function(){
-            $('.qq-client').animate({
-                right: '0',
-                opacity: 'show'
-            }, 400);
-            $('.qq-client-content').animate({
-                right: '-250',
-                opacity: 'show' // 将此处的'show'改为'hide'
-            }, 800);
-        });
-    };
-    H_qqServer.run = function () {
-        this.clickOpenServer();
-    };
-    H_qqServer.run();
+    // 点击展开和关闭
+    $('.qq-client-open').click(function(){
+        $('.qq-client').animate({
+            right: '-50'
+        }, 400);
+        $('.qq-client-content').animate({
+            right: '0',
+            opacity: 'show'
+        }, 800);
+    });
+    $('.qq-client-close').click(function(){
+        $('.qq-client').animate({
+            right: '0',
+            opacity: 'show'
+        }, 400);
+        $('.qq-client-content').animate({
+            right: '-250',
+            opacity: 'show'
+        }, 800);
+    });
 
     // 返回顶部按钮的显示和隐藏
     $(window).scroll(() => {
@@ -78,4 +70,7 @@ $(function(){
         }, 800);
         return false;
     });
+
+    // 将模板插入到页面中
+    $('body').append(qqClientTemplate);
 });
