@@ -1,87 +1,81 @@
-document.writeln("<link rel=\'stylesheet\' href=\'https://www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/taiji/css/top.css\'>");
-document.writeln("<div class=\'suspension\'>");
-document.writeln("	<div class=\'suspension-box\'>");
-document.writeln("		<a href=\'http://wpa.qq.com/msgrd?v=3&uin=466660026&site=qq&menu=yes\' class=\'a a-service \' target=\'_blank\'><i class=\'i\'></i></a>");
-document.writeln("		<a href=\'javascript:;\' class=\'a a-service-phone \'><i class=\'i\'></i></a>");
-document.writeln("		<a href=\'javascript:;\' class=\'a a-qrcode\'><i class=\'i\'></i></a>");
-document.writeln("		<a href=\'https://www.chndao.com/\' class=\'a a-cart\' target=\'_blank\'><i class=\'i\'></i></a>");
-document.writeln("		<a href=\'javascript:;\' class=\'a a-top\'><i class=\'i\'></i></a>");
-document.writeln("		<div class=\'d d-service\'>");
-document.writeln("			<i class=\'arrow\'></i>");
-document.writeln("			<div class=\'inner-box\'>");
-document.writeln("				<div class=\'d-service-item clearfix\'>");
-document.writeln("					<a href=\'http://wpa.qq.com/msgrd?v=3&uin=466660026&site=qq&menu=yes\' class=\'clearfix\'><span class=\'circle\'><i class=\'i-qq\'></i></span><h3>咨询在线客服</h3></a>");
-document.writeln("				</div>");
-document.writeln("			</div>");
-document.writeln("		</div>");
-document.writeln("		<div class=\'d d-service-phone\'>");
-document.writeln("			<i class=\'arrow\'></i>");
-document.writeln("			<div class=\'inner-box\'>");
-document.writeln("				<div class=\'d-service-item clearfix\'>");
-document.writeln("					<span class=\'circle\'><i class=\'i-tel\'></i></span>");
-document.writeln("					<div class=\'text\'>");
-document.writeln("						<p>服务热线</p>");
-document.writeln("						<p class=\'red number\'>0513-86212895</p>");
-document.writeln("					</div>");
-document.writeln("				</div>");
-document.writeln("				<div class=\'d-service-intro clearfix\'>");
-document.writeln("					<p><i></i>互联网建站</p>");
-document.writeln("					<p><i></i>投诉与举报</p>");
-document.writeln("					<p><i></i>合作与入驻</p>");
-document.writeln("					<p><i></i>云之道数据</p>");
-document.writeln("				</div>");
-document.writeln("			</div>");
-document.writeln("		</div>");
-document.writeln("		<div class=\'d d-qrcode\'>");
-document.writeln("			<i class=\'arrow\'></i>");
-document.writeln("			<div class=\'inner-box\'>");
-document.writeln("				<div class=\'qrcode-img\'><img src=\'https://www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/taiji/img/side_ewm.jpg\' alt=\'\'></div>");
-document.writeln("				<p>微信服务号</p>");
-document.writeln("			</div>");
-document.writeln("		</div>");
-document.writeln("	</div>");
-document.writeln("</div>");
-jQuery.noConflict();
-jQuery(document).ready(function($) {
-    /* ----- 侧边悬浮 ---- */
-    $(document).on("mouseenter", ".suspension .a", function() {
-        var _this = $(this);
-        var s = $(".suspension");
-        var isService = _this.hasClass("a-service");
-        var isServicePhone = _this.hasClass("a-service-phone");
-        var isQrcode = _this.hasClass("a-qrcode");
-        if (isService) {
-            s.find(".d-service").show().siblings(".d").hide();
-        }
-        if (isServicePhone) {
-            s.find(".d-service-phone").show().siblings(".d").hide();
-        }
-        if (isQrcode) {
-            s.find(".d-qrcode").show().siblings(".d").hide();
-        }
-    });
-    $(document).on("mouseleave", ".suspension, .suspension .a-top", function() {
-        $(".suspension").find(".d").hide();
-    });
-    $(document).on("mouseenter", ".suspension .a-top", function() {
-        $(".suspension").find(".d").hide();
-    });
-    $(document).on("click", ".suspension .a-top", function() {
-        $("html,body").animate({
-            scrollTop: 0
+const cssString = `
+.qq-client{position:fixed;right:0px;top:50%;margin-top:-80px;}
+.qq-client a{width:50px;height:160px;text-align:center;border:#ebebeb solid 1px;padding:0px 0px;line-height:40px;display:block;background-color: #fff;}
+.qq-client-content{position:fixed;right:-250px;top:38%;border:#ebebeb solid 1px;width:10%;display:none;background:#ffffff;}
+.qq-client-content h1{font-size:14px;width:90%;margin:0px auto;text-align:center;height:50px;line-height:50px;border-bottom:#ebebeb solid 1px;position:relative;}
+.qq-client-content h1 span{font-size:12px;font-weight:normal;position:absolute;left:-30px;top:-20px;cursor:pointer;background:#ffffff;border:#ebebeb solid 1px;width:40px;height:40px;line-height:40px;border-radius:20px;text-align:center;}
+.qq-client-list{background:#ffffff;}
+.client-list{overflow: hidden;line-height: 300%;width: 100%;margin: 0px auto;border-bottom: dashed 1px #ebebeb;text-align: center;}
+.client-list a{display:block;}
+.client-list a:hover{color:red;}
+.client-list span{float:left;}
+.client-list label{float:left;width:60px;text-align:right;padding-right:10px;}
+`;
+
+$(function(){
+    // 将CSS插入到页面中
+    $('<style>').text(cssString).appendTo('head');
+
+    const qqClientTemplate = `
+    <div class="qq-client">
+        <a href="javascript:void(0);" class="qq-client-open"><p>点</p><p>击</p><p>展</p><p>开</p></a>
+    </div>
+    <div class="qq-client-content">
+        <h1>功能中心<span class="qq-client-close">关闭</span></h1>
+        <div class="qq-client-list">
+            <div class="client-list"><a href="https://www.wulintang.cn/bbs/fid/2/" target="_blank">意见建议</a> </div>
+            <div class="client-list"><a href="https://www.wulintang.cn/bbs/fid/1/" target="_blank">问题反馈</a> </div>
+            <div class="client-list"><a href="mailto:jubao@ccwadj.cn">投诉举报</a> </div>
+            <div class="client-list"><a href="http://wpa.qq.com/msgrd?v=3&uin=466660026&site=qq&menu=yes" target="_blank">企鹅在线</a> </div>
+            <div class="client-list"><a href="tel:1234567890">联系电话</a> </div>
+            <div class="client-list"><a href="#" id="back-to-top" title="返回顶部">返回顶部</a>  </div>
+        </div>
+    </div>
+    `;
+
+    H_qqServer = {};
+    H_qqServer.clickOpenServer = function () {
+        $('.qq-client-open').click(function(){
+            $('.qq-client').animate({
+                right: '-50'
+            }, 400);
+            $('.qq-client-content').animate({
+                right: '0',
+                opacity: 'show'
+            }, 800);
         });
-    });
-    $(window).scroll(function() {
-        var st = $(document).scrollTop();
-        var $top = $(".suspension .a-top");
-        if (st > 400) {
-            $top.css({
-                display: 'block'
-            });
+        $('.qq-client-close').click(function(){
+            $('.qq-client').animate({
+                right: '0',
+                opacity: 'show'
+            }, 400);
+            $('.qq-client-content').animate({
+                right: '-250',
+                opacity: 'show'
+            }, 800);
+        });
+    };
+    H_qqServer.run = function () {
+        this.clickOpenServer();
+    };
+    H_qqServer.run();
+    // 返回顶部按钮的显示和隐藏
+    $(window).scroll(() => {
+        if ($(this).scrollTop() > 800) {
+            $('#back-to-top').fadeIn();
         } else {
-            if ($top.is(":visible")) {
-                $top.hide();
-            }
+            $('#back-to-top').fadeOut();
         }
     });
+
+    // 平滑滚动到顶部
+    $('#back-to-top').click(() => {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+
+    // 将模板插入到页面中
+    $('body').append(qqClientTemplate);
 });
