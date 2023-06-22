@@ -1,5 +1,3 @@
-// floating.js
-
 // 引入CSS文件
 var floatingCss = document.createElement("link");
 floatingCss.href = "https://www.isosou.cn/kefu//static/css/floating.css";
@@ -7,10 +5,14 @@ floatingCss.rel = "stylesheet";
 floatingCss.type = "text/css";
 document.head.appendChild(floatingCss);
 
-// 引入JS文件
-var floatingJs = document.createElement("script");
-floatingJs.src = "https://www.isosou.cn/kefu//static/js/floating.js";
-document.head.appendChild(floatingJs);
+// 定义回调函数来处理返回的数据
+function myCallback(data) {
+  $("body").floating(data);
+}
+
+// 引入JS文件，并使用JSONP格式请求数据
+var url = "https://www.isosou.cn/kefu//static/js/floating.js?callback=?";
+$.getJSON(url, myCallback);
 
 // 初始化浮动面板
 $(document).ready(function () {
