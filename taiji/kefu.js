@@ -1,76 +1,78 @@
-const cssString = `
-#qq-client{position:fixed;right:0px;top:50%;margin-top:-80px;}
-#qq-client-open {width:50px;height:160px;text-align:center;border:#ebebeb solid 1px;padding:0px 0px;line-height:40px;display:block;background-color: #fff;}
-#qq-client #qq-client-content{position:fixed;right:-250px;top:38%;border:#ebebeb solid 1px;width:10%;display:none;background:#ffffff;}
-#qq-client #qq-client-content h1{font-size:14px;width:90%;margin:0px auto;text-align:center;height:50px;line-height:50px;border-bottom:#ebebeb solid 1px;position:relative;}
-#qq-client #qq-client-content h1 span{font-size:12px;font-weight:normal;position:absolute;left:-30px;top:-20px;cursor:pointer;background:#ffffff;border:#ebebeb solid 1px;width:40px;height:40px;line-height:40px;border-radius:20px;text-align:center;}
-#qq-client #qq-client-list{background:#ffffff;}
-#qq-client .client-list{overflow: hidden;line-height: 300%;width: 100%;margin: 0px auto;border-bottom: dashed 1px #ebebeb;text-align: center;}
-#qq-client .client-list a{display:block;}
-#qq-client .client-list a:hover{color:red;}
-#qq-client .client-list span{float:left;}
-#qq-client .client-list label{float:left;width:60px;text-align:right;padding-right:10px;}
-`;
+// floating.js
 
-$(function(){
-    // 将CSS插入到页面中
-    $('<style>').text(cssString).appendTo('head');
+// 引入CSS文件
+var floatingCss = document.createElement("link");
+floatingCss.href = "https://www.isosou.cn/kefu//static/css/floating.css";
+floatingCss.rel = "stylesheet";
+floatingCss.type = "text/css";
+document.head.appendChild(floatingCss);
 
-    const qqClientTemplate = `
-    <div id="qq-client">
-        <a href="javascript:void(0);" id="qq-client-open"><p>点</p><p>击</p><p>展</p><p>开</p></a>
-        <div id="qq-client-content">
-            <h1>功能中心<span id="qq-client-close">关闭</span></h1>
-            <div id="qq-client-list">
-                <div class="client-list"><a href="https://www.wulintang.cn/bbs/fid/2/" target="_blank">意见建议</a> </div>
-                <div class="client-list"><a href="https://www.wulintang.cn/bbs/fid/1/" target="_blank">问题反馈</a> </div>
-                <div class="client-list"><a href="mailto:jubao@ccwadj.cn">投诉举报</a> </div>
-                <div class="client-list"><a href="http://wpa.qq.com/msgrd?v=3&uin=466660026&site=qq&menu=yes" target="_blank">企鹅在线</a> </div>
-                <div class="client-list"><a href="tel:1234567890">联系电话</a> </div>
-                <div class="client-list"><a href="#" id="back-to-top" title="返回顶部">返回顶部</a>  </div>
-            </div>
-        </div>
-    </div>
-    `;
+// 引入JS文件
+var floatingJs = document.createElement("script");
+floatingJs.src = "https://www.isosou.cn/kefu//static/js/floating.js";
+document.head.appendChild(floatingJs);
 
-    // 点击展开和关闭
-    $('#qq-client-open').click(function(){
-        $('#qq-client').animate({
-            right: '-50'
-        }, 400);
-        $('#qq-client-content').animate({
-            right: '0',
-            opacity: 'show'
-        }, 800);
-    });
-    $('#qq-client-close').click(function(){
-        $('#qq-client').animate({
-            right: '0',
-            opacity: 'show'
-        }, 400);
-        $('#qq-client-content').animate({
-            right: '-250',
-            opacity: 'show'
-        }, 800);
-    });
-
-    // 返回顶部按钮的显示和隐藏
-    $(window).scroll(() => {
-        if ($(this).scrollTop() > 800) {
-            $('#back-to-top').fadeIn();
-        } else {
-            $('#back-to-top').fadeOut();
-        }
-    });
-
-    // 平滑滚动到顶部
-    $('#back-to-top').click(() => {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 800);
-        return false;
-    });
-
-    // 将模板插入到页面中
-    $('body').append(qqClientTemplate);
+// 初始化浮动面板
+$(document).ready(function () {
+  $("body").floating({
+    "theme": "panel_theme_round_solid",
+    "state": true,
+    "moveState": true,
+    "size": "sm",
+    "position": "right-center",
+    "tip": {
+      "background-color": "#000",
+      "color": "#fff"
+    },
+    "account": [
+      {
+        "type": "Email",
+        "tip": "投诉举报",
+        "text": "jubao@ccwadj.cn",
+        "url": "mailto:jubao@ccwadj.cn"
+      },
+      {
+        "type": "Email",
+        "tip": "企业邮箱",
+        "text": "wulintang@ccwadj.cn",
+        "url": "mailto:wulintang@ccwadj.cn"
+      },
+      {
+        "type": "QQ",
+        "tip": "应急响应",
+        "text": "1223716790",
+        "url": "http://wpa.qq.com/msgrd?v=3&uin=1223716790&site=qq&menu=yes"
+      },
+      {
+        "type": "QQ",
+        "tip": "网站客服",
+        "text": "466660026",
+        "url": "http://wpa.qq.com/msgrd?v=3&uin=466660026&site=qq&menu=yes"
+      },
+      {
+        "type": "Phone",
+        "tip": "商务合作",
+        "text": "13222131422",
+        "url": "tel:13222131422"
+      },
+      {
+        "type": "Phone",
+        "tip": "站务问题",
+        "text": "17778737273",
+        "url": "tel:17778737273"
+      },
+      {
+        "type": "QRcode",
+        "tip": "https://img.wulintang.cn/upfile/2022/09/1663305978617.jpg",
+        "text": null,
+        "url": null
+      },
+      {
+        "type": "Top",
+        "tip": "Back top",
+        "text": null,
+        "url": null
+      }
+    ]
+  });
 });
