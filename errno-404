@@ -1,24 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>伍林堂安全应急响应中心</title>
-<link rel="shortcut icon" type="image/x-icon" href="https://www.wulintang.cn/favicon.ico"/>
-<link href="https://www.wulintang.cn/icon/iconfont.css" rel="stylesheet" type=text/css>
+<script src="https://www.wulintang.cn/public/js/jquery.js"></script>    
 </head>
-<body style="text-align: center;margin: 0 auto;width: 100%;">
-<div style="margin: 0 auto;width: 600px;">
- <div style="background: #000;margin-top: 100px; color:#f4e0a7;padding: 20px;">
-  <span style="text-align: center;margin: 0 auto;width: 100%;"><i class="iconfont icon-wulintanganquanyingjixiangyingzhongxin" style="font-size: 20px;margin-right: 2px;vertical-align: middle;"></i>伍林堂安全应急响应中心</span>
- </div>
- <div style="padding: 20px;background: #edf1ff;text-align: left;">
-  <h4 style="text-align: center;">您正在尝试访问我司CDN页面</h4>
-  <p>该域名下产品系我司CDN中继缓存页面，依照大陆法律规定禁止访问。</p>
-  <p>如需使用我司原创美术及版权内容，访问者需及时进行相应处理：</p>
-  <p style="padding: 20px;background: #dedede;border-radius: 5px;">通过 <a href="https://www.wulintang.cn/" target="_blank" style="color: #000;text-decoration: none;">南通伍林堂文化传播有限公司</a> 官网的商务合作客服取得联系，并以此获得我司API权限。</p>
-  <p>一般情况下，访问我司禁止开放资源本质就是违法行为，我司判定访问IP后会作出相应法律应急处理。</p>
-  <p style="text-align: right;"><i class="iconfont icon-wulintanganquanyingjixiangyingzhongxin" style="font-size: 20px;margin-right: 2px;vertical-align: middle;"></i>伍林堂安全应急响应中心</p>
- </div>
-</div>
+<body>
+<script type="text/javascript"> 
+window.location.replace("https://www.zhimucishan.com/");</script> 
 </body>
-</html>  
+</html>
