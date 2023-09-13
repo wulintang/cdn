@@ -95,7 +95,7 @@ document.writeln("</style>");
 if (window.console) {
 var cons = console;
 if (cons) {
-cons.log("%c\n              ", "font-size:41px;background-size:300px 46px;background:url('https://www.abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba.cn/ad/logo.png') no-repeat 100% 100%");
+cons.log("%c\n              ", "font-size:41px;background-size:300px 46px;background:url('https://cdn.jsdelivr.net/gh/wulintang/cdn@1.0/ad/logo.png') no-repeat 100% 100%");
 cons.log('道教是中国唯一的土生土长的宗教，它是在汉朝末年创立的。');
 cons.log('张道陵祖师创教后，多地多派为道教带来了和谐的自然规律。');
 cons.log('在这里，请您敬请感受来自于大自然的道的气息与丰厚魅力。');
