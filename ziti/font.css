@@ -5,34 +5,34 @@
 	font-family: 'OPPO-OS';
 	font-style: normal;
 	font-display:swap;
-	src:url('https://cdn.jsdelivr.net/gh/wulintang/cdn@1.0/ziti/font-opposans/OPPO-OS.woff2') format('woff2');
+	src:url('https://cdn.jsdelivr.net/gh/wulintang/cdn/ziti/font-opposans/OPPO-OS.woff2') format('woff2');
 }
 /* 方正粗金陵繁体 */
 @font-face {
     font-family:'FZCuJinLFW';
     font-style: normal;
 	font-display:swap;
-    src:url('https://cdn.jsdelivr.net/gh/wulintang/cdn@1.0/ziti/ziti/FZCuJinLFW.woff2') format('woff2');
+    src:url('https://cdn.jsdelivr.net/gh/wulintang/cdn/ziti/ziti/FZCuJinLFW.woff2') format('woff2');
 }
 /* 九叠云篆 */
 @font-face {
     font-family:'jiudie';
     font-style: normal;
     font-display: swap;
-    src:url('https://cdn.jsdelivr.net/gh/wulintang/cdn@1.0/ziti/ziti/jiudie.woff2') format('woff2');
+    src:url('https://cdn.jsdelivr.net/gh/wulintang/cdn/ziti/ziti/jiudie.woff2') format('woff2');
 }
 /* Ammonite */
 @font-face {
     font-family:'Ammonite';
     font-style: normal;
     font-display: swap;
-    src:url('https://cdn.jsdelivr.net/gh/wulintang/cdn@1.0/ziti/ziti/Ammonite.woff2') format('woff2');
+    src:url('https://cdn.jsdelivr.net/gh/wulintang/cdn/ziti/ziti/Ammonite.woff2') format('woff2');
 }
 /* 娃娃字体 */
 @font-face {
 	font-family:'lizihan';
     font-style: normal;
     font-display: swap;	
-	src:url('https://cdn.jsdelivr.net/gh/wulintang/cdn@1.0/ziti/ziti/lizihan.woff2') format('woff2');}
+	src:url('https://cdn.jsdelivr.net/gh/wulintang/cdn/ziti/ziti/lizihan.woff2') format('woff2');}
 /* 全局字体 */
 body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {font-family: OPPO-OS!important;}
