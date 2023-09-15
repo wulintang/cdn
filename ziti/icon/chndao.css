@@ -1,4 +1,4 @@
-@font-face {font-family:"chndao";src:url('https://cdn.jsdelivr.net/gh/wulintang/cdn@1.0/ziti/icon/iconfont.woff2') format('woff2');}
+@font-face {font-family:"chndao";src:url('https://cdn.jsdelivr.net/gh/wulintang/cdn/ziti/icon/iconfont.woff2') format('woff2');}
 .iconfont {font-family:"chndao"!important;font-size:24px!important;font-style:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
 .icon-hantaoisms:before {content:"\e60b";}
 .icon-taijitubiao:before {content:"\e60d";}
