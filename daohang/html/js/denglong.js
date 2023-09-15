@@ -1,5 +1,5 @@
 document.writeln("<style type=text/css>");
-document.writeln("@font-face {font-family:huahuaxingkai;src:url(https://cdn.jsdelivr.net/gh/wulintang/cdn@1.0/ziti/xingkai.ttf);}");
+document.writeln("@font-face {font-family:huahuaxingkai;src:url(https://cdn.jsdelivr.net/gh/wulintang/cdn/ziti/xingkai.ttf);}");
 document.writeln(".deng-box {position: fixed;top: -40px;right: -20px;z-index: 9999999;}");
 document.writeln(".deng-box1 {position: fixed;top: -30px;right: 10px;z-index: 9999999;}");
 document.writeln(".deng-box1 .deng {position: relative;width: 120px;height: 90px;margin: 50px;background: #d8000f;background: rgba(216, 0, 15, 0.9);border-radius: 50% 50%;-webkit-transform-origin: 50% -100px;-webkit-animation: swing 5s infinite ease-in-out;box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1);}");
